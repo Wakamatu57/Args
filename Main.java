@@ -11,6 +11,8 @@ public class Main {
             int port = argParser.getInt('p');
             String directory = argParser.getString('d');
 
+            System.out.println("argParser.has(p): " + argParser.has('p'));
+            System.out.println("argParser.has(m): " + argParser.has('m'));
             System.out.println("Logging enabled: " + logging);
             System.out.println("Port: " + port);
             System.out.println("Directory: " + directory);

@@ -74,6 +74,10 @@ public class Args {
             
         }
     }
+
+    public boolean has(char arg) {
+        return this.argsFound.contains(arg);
+    }
     
     public boolean getBoolean(char arg) {
         return BooleanArgumentMarshaler.getValue(marshalers.get(arg));
